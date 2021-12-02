@@ -1,15 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Downloads</title>
+
 </head>
+
 <body>
-<h1>
-  ahoj
-</h1>  
+
+    <header>
+
+        <img class="logo" src="logo.png" alt="logo">
+
+        <nav>
+            <ul id="nav-links-holder" >
+                <li class="nav-links"><a class="navbutton" href="">Home</a></li>
+                <li class="nav-links"><a class="navbutton" href="">Templates</a></li>
+                <li class="nav-links"><a class="navbutton" href="">About us</a></li>
+                <li class="nav-links"><a class="navbutton" href="">FAQ</a></li>
+                <li class="nav-links"><a class="navbutton" href="">Prices</a></li>
+                <li class="nav-links"><a class="navbutton" href="">Download</a></li>
+                
+              
+               
+            </ul>
+
+            
+
+        </nav>
+       
+        <button id="menu-button" >
+            Menu 
+        </button>
+
+
+
+    </header>
+
+    <main>
+
+        <section class="title">
+
+            <div>
+                <h1>Download roommateHub now</h1>
+                <p>Start organising your life and home today.</p>
+            </div>
+
+        </section>
+
+        <div class="box free">
+           
+            <div class="content1">
+                <h2>
+                    
+                </h2>
+    
+                <p>
+                    
+                </p>
+                
+    
+               <button class="button green">
+                    Download for Mac
+                </button> 
+            </div>
+            
+            <div>
+                <img class="apple" src="apple.logo.svg.png" alt="apple">
+            </div>
+
+
+        </div>
+
+        <div class="box premium">
+
+            <div class="content2">
+                <h2>
+                    
+                </h2>
+
+                <p>
+
+                </p>
+                
+    
+                <button class="button pink">
+                    Download for Windows
+                </button>
+    
+            </div>
+           
+            <div>
+                <img class="windows" src="windowslogo.svg.png" alt="windows">
+            </div>
+
+        </div>
+
+    </main>
+    
+   
+
+    <script>
+        const menuButton=document.getElementById("menu-button")
+        console.log(menuButton)
+        const menu=document.getElementById("nav-links-holder")
+        console.log(menu)
+        menuButton.addEventListener("click", ()=>{
+            menu.classList.toggle("menu-open")
+
+        })
+    </script>
+
+     <footer>
+        <h4>More information:</h4>
+        <section id="icons">
+            <a href="#"><img src="facebook-brands (2).svg" alt="facebook"></a>
+            <a href="#"><img src="instagram-brands.png" alt="instagram"></a>
+            <a href="#"><img src="youtube-brands.png" alt="youtube"></a>
+        </section>
+        <p>Copyrights © 2021</p>
+    </footer>
 </body>
 </html>
