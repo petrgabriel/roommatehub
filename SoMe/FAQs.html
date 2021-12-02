@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="FAQs.css">
+            <title>"FAQs"</title>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <img src="Logo.png" alt="logo">
+                    <h1>roommateHUB</h1>
+                    <div class="navBar">
+                        <div id="burger-button" onclick='cross()'>
+                            <div class='Burger-Menu bar1'></div>
+                            <div class='Burger-Menu bar2'></div>
+                            <div class='Burger-Menu bar3'></div>
+                        </div>
+                        <div id="myContent" class="myDropDownContent">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#">Home</a>
+                            <a href="#">Templates</a>
+                            <a href="#">About us</a>
+                            <a class="current" href="#">FAQ</a>
+                            <a href="#">Prices</a>
+                            <a href="#">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navigation for web-->
+            <div class="topnav">
+                <a href="#"><img src="Logo.png" alt="logo"></a>
+                <h1>roommateHUB</h1>
+                <div id="pages">
+                    <a href="#">Home</a>
+                    <a href="#">Templates</a>
+                    <a href="#">About us</a>
+                    <a class="current" href="#">FAQ</a>
+                    <a href="#">Prices</a>
+                    <a href="#">Download</a>
+                </div>
+             </div>
+        </header>
+            <section class="sentence">
+                <h2>Frequently asked questions</h2>
+                <p id="in">Find your answer. Stay eductated. Stay motivated.</p>
+            </section>
+            <main>
+            <section class="squere aa">
+                <img id="chat" src="chat.png">
+                <h3>How much the roommateHUB cost?</h3>
+                <p>We provide two version. One for free for everyone who would like to try our app. And we also provide full version for 30 DKK/month. This version have much more options how to personalized your app.</p>
+
+            </section>
+      
+            <section class="squere bb">
+                <img id="chat" src="chat.png">
+                <h3>How many people can share one "home"?</h3>
+                <p>One “home” can share up to 10 people.</p>
+        
+            </section>
+            <section class="squere cc">
+                <img id="chat" src="chat.png">
+                <h3>Can I sync mobile app with PC?</h3>
+                <p>The application can be synchronized to all devices where the user is logged in.  But you can also select only some devices to sync.</p>
+
+            </section>
+            <section class="squere dd">
+                <img id="chat" src="chat.png">
+                <h3>What device can roommateHUB be downloaded to?</h3>
+                <p>Currently, the application is supported for MacOS, IOS, Android, Windows and Linux.</p>
+
+            </section>
+            <section class="squere ee">
+                <img id="chat" src="chat.png">
+                <h3>What can be found in the roommate HUB for features?</h3>
+                <p>The application offers a shared calendar, to do lists, schedules, chats and much more.  It's up to you how you customize the application.</p>
+
+            </section>
+            <section class="squere ff">
+                <img id="chat" src="chat.png">
+                <h3>How long does it take to prepare an application?</h3>
+                <p>Before you start using the application you need approx.  30 minutes to organize and select the activities you want to solve and organize in your home.  Consequently, use is very easy and time-saving.</p>
+            </main>
+
+            </section>
+            <button>download
+            </button>
+            <footer>
+                <h4>More information:</h4>
+                <section id="icons">
+                    <a href="#"><img src="facebook-brands.svg" alt="facebook"></a>
+                    <a href="#"><img src="instagram-brands.svg" alt="instagram"></a>
+                    <a href="#"><img src="youtube-brands.svg" alt="youtube"></a>
+                </section>
+            </footer>
+            <script>
+                function cross(){
+                    document.getElementById('myContent').style.height = '100%';
+                    let x= document.getElementById('burger-button');
+                    x.classList.toggle('change');
+                    let drop = document.getElementById('myContent');
+                    drop.classList.toggle('show');
+                }
+                function closeNav(){
+                    document.getElementById('myContent').style.height = '0%';
+                }
+    
+                window.onclick = function(event) {
+                    if (!event.target.matches('#burger-button')) {
+                        let dropdowns = document.getElementsByClassName("myDropDownContent");
+                        let i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            let openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                            document.getElementById('burger-button').classList.toggle('change');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </body>
+    </html>
